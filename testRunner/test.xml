@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite">
+    <test name="Verify Text" thread-count="3">
+        <classes>
+            <class name="VerifyCovid19InformationTextTest"/>
+            <class name="VerifyRXModelGalleryTest"/>
+            <class name="VerifyBookATestProcessTest"/>
+          </classes>
+    </test>
+</suite>
