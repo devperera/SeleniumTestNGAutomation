@@ -14,13 +14,4 @@ public interface wait {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-//    default void waitForElementToDisappear(WebDriver driver, By locator) {
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15000));
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-//    }
-//
-//    default void waitForTextToDisappear(WebDriver driver, By locator, String text) {
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15000));
-//        wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
-//    }
 }
