@@ -17,8 +17,10 @@ public class VerifyBookATestProcessTest extends BaseTest {
         rxModelPage = new RXModelPage(getDriver());
         rxModelPage.selectBookATestDrive();
         bookATestDrivePage = new BookATestDrivePage(getDriver());
-        bookATestDrivePage.bookATestDrive("Dev", "Perera", "dev@dev.com",
-        "778896658","October 6, 2022","10:00");
+        Assert.assertEquals(bookATestDrivePage.selectedPreferredModel(),"RX 300","Expected test Not match with actual text!");
+        bookATestDrivePage.bookATestDrive("CPL", "Test", "qa@convertium.com","+65",
+        "91234567","October 6, 2022","18:00", "lexus-test-drive-concierge");
         Assert.assertTrue(bookATestDrivePage.isBookATestDriveButtonIsEnable());
       }
 }
+
